@@ -1,0 +1,22 @@
+:root{--accent:#36D6B5;--ink:#f3efe0;}
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html,body{height:100%; background:#000; color:var(--ink); font-family:'Courier New', monospace; overflow:hidden; user-select:none; -webkit-user-select:none;}
+  #game{position:fixed; inset:0; width:100vw; height:100vh; background:#000; display:block; touch-action:none;}
+  #hud{position:fixed; top:0; left:0; right:0; padding:14px 18px; display:flex; justify-content:space-between; align-items:flex-start; pointer-events:none; z-index:10; font-size:14px; letter-spacing:1px; text-shadow:0 1px 2px #000;}
+  .stat{background:rgba(0,0,0,.55); padding:8px 12px; border:1px solid rgba(255,255,255,.15); border-radius:4px;}
+  .stat b{color:var(--accent); font-size:18px; display:block;}
+  #timer{color:#ffcf6b;}
+  #msg{position:fixed; top:40%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,.75); padding:24px 32px; border:2px solid var(--accent); border-radius:6px; font-size:20px; text-align:center; z-index:20; display:none; text-shadow:0 1px 2px #000;}
+  #msg small{display:block; margin-top:8px; font-size:12px; color:#aaa;}
+  #controls{position:fixed; bottom:0; left:0; right:0; display:flex; justify-content:space-between; padding:18px; pointer-events:none; z-index:10;}
+  button.btn{pointer-events:auto; background:rgba(0,0,0,.65); color:var(--ink); border:1px solid rgba(255,255,255,.2); padding:14px 18px; border-radius:6px; font-family:inherit; font-size:14px; letter-spacing:1px; cursor:pointer; -webkit-tap-highlight-color:transparent;}
+  button.btn:active{background:var(--accent); color:#000;}
+  button.fire{background:rgba(180,40,40,.7); font-size:16px; padding:18px 26px;}
+  button.fire:active{background:#ff5757;}
+  #start{position:fixed; inset:0; background:linear-gradient(180deg,#1a1207,#0b0f0a); display:flex; flex-direction:column; justify-content:center; align-items:center; z-index:50; padding:24px; text-align:center;}
+  #start h1{font-size:clamp(28px, 7vw, 56px); color:var(--accent); letter-spacing:3px; margin-bottom:12px;}
+  #start p{max-width:520px; margin-bottom:20px; line-height:1.6; font-size:14px; color:#ccc;}
+  #start .big{background:var(--accent); color:#000; border:none; padding:16px 40px; font-size:18px; font-weight:bold; cursor:pointer; border-radius:4px; font-family:inherit; letter-spacing:2px;}
+  #start .big:active{transform:scale(.97);}
+  .anims{position:absolute; bottom:12px; font-size:11px; color:#666;}
+  #scope-hint{position:fixed; top:50%; right:12px; transform:translateY(-50%); font-size:11px; color:#888; writing-mode:vertical-rl; pointer-events:none;}
